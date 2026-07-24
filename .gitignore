@@ -132,3 +132,8 @@ dmypy.json
 .idea/
 */__pycache__
 .DS_Store
+
+# Project data
+dataset/
+pretrain_models/
+infer_results/
