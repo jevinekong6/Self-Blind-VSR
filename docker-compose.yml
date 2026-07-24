@@ -1,0 +1,14 @@
+services:
+  vsr:
+    build: .
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    volumes:
+      - ./code:/workspace/code
+      - ./dataset:/workspace/dataset
+      - ./pretrain_models:/workspace/pretrain_models
+      - ./infer_results:/workspace/infer_results
+    shm_size: '8gb'
+    stdin_open: true
+    tty: true
