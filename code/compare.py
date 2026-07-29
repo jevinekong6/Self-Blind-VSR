@@ -1,9 +1,11 @@
 import cv2, os, glob
+import numpy as np
+
 
 # ---- EDIT THESE ----
-LR_DIR = '/workspace/dataset/MyVideos/LR_blurdown_x4/GX11'
-HR_DIR = '/workspace/infer_results/infer_MyVideos/GX11'   # SR output
-OUT_DIR = '/workspace/dataset/comparison_GX11'
+LR_DIR = '/workspace/dataset/MyVideos/LR_blurdown_x4/GX_KyleField'
+HR_DIR = '/workspace/infer_results/infer_2026-07-24_KyleField/GX_KyleField'   # SR output
+OUT_DIR = '/workspace/infer_results/comparison_GX_KyleField'
 # --------------------
 
 os.makedirs(OUT_DIR, exist_ok=True)

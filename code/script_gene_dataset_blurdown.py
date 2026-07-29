@@ -175,7 +175,7 @@ def gene_dataset_blurdown(HR_root, save_root, type='Gaussian'):
 
 if __name__ == '__main__':
     gene_dataset_blurdown(
-        HR_root='../dataset/REDS4_BlurDown_Gaussian/HR',
-        save_root='../dataset/REDS4_BlurDown_Gaussian',
+        HR_root='../dataset/MyVideos/HR',
+        save_root='../dataset/MyVideos',
         type='Gaussian'
     )
